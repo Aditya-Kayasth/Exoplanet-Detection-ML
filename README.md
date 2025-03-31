@@ -1,61 +1,44 @@
 # Hunting Exoplanets in Space using Machine Learning
+---
 
 ## 🌌 Project Overview
 This project aims to detect exoplanets using data from NASA's **Kepler Space Telescope**. The primary technique employed is the **Transit Method**, which identifies planets by observing periodic dips in a star's brightness as a planet passes in front of it. The project involves **data preprocessing, feature engineering, model training, and evaluation** using machine learning algorithms such as **Random Forest and XGBoost**.
 
-## 📂 Dataset Details
-The dataset is derived from NASA's **Kepler Space Telescope**, containing thousands of stellar light curves recorded over time. Each data point represents the brightness level of a star and its variation, which helps in detecting planetary transits.
+## 📁 Repository Structure
+- **`Exploring.ipynb`** - Understanding the dataset with slicing, feature analysis, visualizations, and GIF-based insights.
+- **`Visualization.ipynb`** - Applying matplotlib and seaborn for pattern recognition and feature importance analysis.
+- **`Normalization.ipynb`** - Implementing multiple normalization techniques, including mean normalization, to improve model performance.
+- **`Model_deployment.ipynb`** - Training and evaluating Random Forest and XGBoost models before and after normalization.
+- **`Fast_Fourier_Transformation.ipynb`** - Applying FFT on normalized data to extract meaningful features and enhance model accuracy.
 
-## 🛠 Installation & Setup
-To run this project on your local system:
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/Hunting-Exoplanets.git
-   cd Hunting-Exoplanets
+## 🔍 Key Insights & Findings
+1. **Data Exploration & Visualization**: Initial exploration with slicing and feature analysis revealed patterns in the dataset.
+2. **First Model Deployment**: Random Forest and XGBoost classifiers showed 99% accuracy but failed to generalize effectively.
+3. **Data Normalization**: Mean normalization slightly improved model performance, but results were still suboptimal.
+4. **FFT Application**: Transforming data using FFT led to feature extraction that significantly improved XGBoost performance.
+
+## 🚀 How to Run the Notebooks
+1. Clone the repository:
+   ```sh
+   git clone <repo_link>
+   cd <repo_folder>
    ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run Jupyter Notebook:
-   ```bash
+
+2. Run the Jupyter notebooks:
+   ```sh
    jupyter notebook
    ```
-4. Open the provided **Jupyter Notebooks** and follow the execution flow.
+3. Open each `.ipynb` file to explore different stages of the analysis.
 
-## 🔬 Methodology
-The project follows these major steps:
-1. **Data Preprocessing:** Cleaning and normalizing high-dimensional Kepler data.
-2. **Feature Engineering:** Extracting key features from light curve data.
-3. **Model Training:** Training classifiers such as **Random Forest and XGBoost**.
-4. **Class Imbalance Handling:** Using **SMOTE** to balance positive and negative samples.
-5. **Feature Selection:** Implementing **Recursive Feature Elimination (RFE)** for optimal performance.
-6. **Evaluation & Optimization:** Using **GridSearchCV** for hyperparameter tuning and **early stopping** for efficiency.
+## 📊 Technologies & Libraries Used
+- Python
+- Pandas & NumPy
+- Matplotlib & Seaborn
+- Scikit-learn
+- XGBoost & Random Forest
+- Fast Fourier Transformation (FFT)
 
-## 🚀 Technologies Used
-- **Python** (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow)
-- **Machine Learning** (Random Forest, XGBoost, SMOTE, RFE, GridSearchCV)
-- **Data Visualization** (Matplotlib, Seaborn)
-- **Jupyter Notebook** for interactive analysis
-
-## 📊 Results & Insights
-The final trained model achieved **99% accuracy**, effectively detecting exoplanets based on transit light curves. Advanced feature selection and preprocessing significantly improved the predictive capability.
-
-## 📖 How to Use
-- **Data Exploration:** Start with `1_Data_Preprocessing.ipynb` to understand the dataset.
-- **Feature Engineering & Selection:** Follow `2_Feature_Engineering.ipynb`.
-- **Model Training & Evaluation:** Run `3_Model_Training.ipynb`.
-- **Final Predictions & Visualization:** See results in `4_Final_Analysis.ipynb`.
-
-## 🚀 Future Improvements
-- Implementing **deep learning models** like CNNs for automated feature extraction.
-- Using **Bayesian Optimization** for hyperparameter tuning.
-- Expanding the dataset with additional exoplanet discoveries.
-
-## 🤝 Contributions
-Feel free to fork this repository, submit issues, or contribute via pull requests. Suggestions for improvement are always welcome!
+## 📢 Conclusion
+This project showcases a structured approach to data analysis and machine learning. While standard models initially struggled, FFT-based feature extraction improved classification results significantly. The findings highlight the importance of preprocessing techniques in achieving reliable model performance.
 
 ---
-📌 **Author:** Aditya Kayasth
-📌 **License:** MIT License
-
