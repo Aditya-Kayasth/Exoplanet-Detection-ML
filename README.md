@@ -41,4 +41,6 @@ This project aims to detect exoplanets using data from NASA's **Kepler Space Tel
 ## 📢 Conclusion
 This project showcases a structured approach to data analysis and machine learning. While standard models initially struggled, FFT-based feature extraction improved classification results significantly. The findings highlight the importance of preprocessing techniques in achieving reliable model performance.
 
+Note: Change the domain from 'github.com' to 'githubtocolab.com'. The notebook will open in Colab.
+
 ---
