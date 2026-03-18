@@ -30,7 +30,7 @@ This project aims to detect exoplanets using data from NASA's **Kepler Space Tel
    ```
 3. Open each `.ipynb` file to explore different stages of the analysis.
 
-## 📊 Technologies & Libraries Used
+## Technologies & Libraries Used
 - Python
 - Pandas & NumPy
 - Matplotlib & Seaborn
@@ -38,7 +38,7 @@ This project aims to detect exoplanets using data from NASA's **Kepler Space Tel
 - XGBoost & Random Forest
 - Fast Fourier Transformation (FFT)
 
-## 📢 Conclusion
+## Conclusion
 This project showcases a structured approach to data analysis and machine learning. While standard models initially struggled, FFT-based feature extraction improved classification results significantly. The findings highlight the importance of preprocessing techniques in achieving reliable model performance.
 
 ---
